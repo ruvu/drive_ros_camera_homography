@@ -210,14 +210,14 @@ add_dependencies(camera_homography_estimator ${${PROJECT_NAME}_EXPORTED_TARGETS}
 # catkin_add_nosetests(test)
 
 
-if(CATKIN_ENABLE_TESTING)
-    find_package(rostest REQUIRED)
-    add_rostest_gtest(camera_homography_estimator_test launch/homography_estimator.test
-        test/homography_estimator_test.cpp
-        )
-    target_link_libraries(camera_homography_estimator_test
-        camera_homography_estimator_lib
-        ${catkin_LIBRARIES}
-        ${OpenCV_LIBS}
-        )
-endif()
+# if(CATKIN_ENABLE_TESTING)
+#     find_package(rostest REQUIRED)
+#     add_rostest_gtest(camera_homography_estimator_test launch/homography_estimator.test
+#         test/homography_estimator_test.cpp
+#         )
+#     target_link_libraries(camera_homography_estimator_test
+#         camera_homography_estimator_lib
+#         ${catkin_LIBRARIES}
+#         ${OpenCV_LIBS}
+#         )
+# endif()
